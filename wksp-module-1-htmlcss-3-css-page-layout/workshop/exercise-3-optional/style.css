@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+}
+
+.container{
+    min-height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.content{
+    font-size: 10vh;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: center;
+    font-size: 3vh;
+    margin: 0;
+}
+
+header, footer{
+    margin: 0;
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+}
+
+header {
+    top: 0;
+}
+
+footer{
+    bottom: 0;
+}

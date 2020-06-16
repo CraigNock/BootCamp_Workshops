@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    background-color: #383737;
+    position: relative;
+    display: inline-block;
+    width: 100vw;
+}
+
+.nav-dropdown {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+    padding: 2vh
+}
+
+
+
+.dropmenu{
+    display: none;
+    position: absolute;
+    background-color: rgb(57, 175, 253);
+    list-style: none;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.item {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    padding: 2vh;
+}
+
+.nav:hover .dropmenu {
+    display: block
+
+}
+
+.nav:hover .nav-dropdown {
+    cursor: text;
+}
+
+.item:hover{
+    cursor: text;
+}

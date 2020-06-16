@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.board {
+    background: #eaeaea;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:  auto(3, 1fr);
+    height: 600px;
+    width: 600px;
+    grid-gap: 3px;
+    border: 2px solid #808080;
+    margin: 32px 0;
+}
+.cell {
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.cell:hover {
+    background-color: #808080;
+    transition: background-color linear 300ms;
+}
+
+.active{
+    border: 2px solid forestgreen;
+}

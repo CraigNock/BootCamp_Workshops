@@ -1,0 +1,26 @@
+radio/checkbox 1-2 page layout(ex 12)
+
+game project - module-2-oop
+
+array methods(armstrong) - 2-2 fundamentals
+balloon pop - 2-4 events
+grids boards - 2-6 fundamentals 2
+array/object methods(desserts) - 2-7 fundamentals
+
+frog race - 3- the dom
+node intro/top50 - 3-1 introduction
+top50 - 3-2 url params
+friendface - 3-3 friendface
+todo list - 3-4 callbacks
+rick/morty store - 3-5 post
+darksky/ISSposition - 3-6 promises
+joke API - 3-7 fetch-async-await
+hangman - 3-8 REST-apis
+
+chat stream - 4-1 intro-and-props
+fruit store - 4-2 ecosystem
+typeahead - 4-3 state
+cookie clicker - 4-4 effects 
+2cookie 2clicker - 4-5 context
+ticket widget - 4-6 reducers
+like animation - 4-7 whimsey

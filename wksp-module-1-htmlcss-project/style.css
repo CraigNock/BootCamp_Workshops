@@ -1,0 +1,634 @@
+
+/* Remember: Mobile First. */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAVIGATION BAR START */
+
+#nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    top: 0;
+    width: 100%;
+    background-color:#3a3633 ;
+    color: whitesmoke;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.top {
+    text-decoration: none;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    height: 100%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    padding: 0 2vw;
+    height: 100%;
+}
+
+.icon {
+    fill: whitesmoke;
+}
+
+li > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: whitesmoke;
+    
+}
+
+.jumpto {
+    list-style: none;
+    display: none;
+    position: fixed;
+    top: 5vh;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    background-color: #3a3633 ;
+
+}
+
+.jumpto > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100vw;
+    height: 5vh;
+}
+
+.jumpto > li:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+.jumpto>li:hover .jumpto{
+    display: block;
+}
+
+
+.menu:hover .jumpto{
+    display: block;
+}
+
+#top:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+.dropdown {
+    display: none;
+}
+.navquad {
+    display: none;
+}
+
+
+/* NAVIATION BAR END */
+
+/* INTRO START */
+
+#intro {
+    background-image: url('img/New\ Zealand.jpg');
+    background-size: cover;
+    overflow: hidden;
+    color: whitesmoke;
+    padding-top: 10vh; /* nav */
+    margin-top: -5vh; /* nav */
+    height: 100vh ;
+}
+
+
+.titlebox>h1 {
+    margin: 5vh 3vw;
+}
+
+.titlebox>h2, .titlebox>p {
+    display: block;
+    background-color: rgba(46, 46, 46, 0.6);
+    margin: 0;
+    padding: 2vh 3vw ;
+    
+}
+
+
+
+/* INTRO END */
+
+/* FEATURES START */
+
+#features {
+    margin: 0;
+    padding: 0 0 5vh 0;
+    padding-top: 5vh; /* nav */
+    margin-top: -5vh; /* nav */
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 5px 2px grey;
+    border-radius: 4px;
+    margin: 10vh auto;
+    padding: 1rem;
+    text-align: center;
+    width: 20rem;
+}
+
+.button {
+    background-color: #3a3633;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 4px;
+    width: 80%;
+    padding: .5rem;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+
+/* FEATURES END */
+
+/* HALVES START */
+
+#halves{
+    position: relative;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding-top: 5vh; /* nav */
+    margin-top: -5vh; /* nav */
+}
+
+.half1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #3a3633;
+    color: whitesmoke;
+    margin: 0;
+    padding: 5vw;
+    height: 50vh;
+}
+
+.half2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: linear-gradient(to right, white, rgb(0, 102, 255));
+    color: whitesmoke;
+    margin: 0;
+    padding: 5vw ;
+    height: 50vh;
+}
+
+.spinbox {
+    display: block;
+    margin: 0 auto;
+    position: absolute; 
+    top: 46%;
+    left: calc(50% - 10rem);
+    background-color: #3a3633;
+    border: .5rem solid whitesmoke;
+    font-size: .8rem;
+    text-align: center;
+    width: 20rem;
+    z-index: 2;
+}
+
+.spinbox>h2 {
+    color: darkgoldenrod;
+}
+
+
+
+.spinbox:hover {
+    animation: rotate ease-in-out 5s;
+    cursor:default;
+} 
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+
+/* HALVES END */
+
+/* GALLERY START */
+
+#gallery {
+    display: block;
+    padding-top: 5vh; /*nav*/
+    margin-top: -5vh; /*nav*/
+}
+
+.frame {
+    position: relative;
+    display: block;
+    object-fit: cover;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.gallery-image {
+    display: block;
+    max-width: 100%;  
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.frame > h3 {                  
+    color: whitesmoke;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    background-color: rgba(46, 46, 46, 0.5);
+    visibility: hidden;
+    transition: visibility ease-out 1s;
+}
+
+.frame:hover h3{                  
+    visibility: visible;
+    /* transition: visibility 3s ease-in; */
+}
+
+.frame:hover img {
+    animation: zoom ease-in .5s;
+    transform: scale(1.1);
+} 
+
+@keyframes zoom {
+    0% {transform: scale(1);}
+    100% {transform: scale(1.1);}
+}
+
+/* GALLERY END */
+
+/* REGISTER START  */
+
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    padding-top: 5vh;
+}
+
+regbox {
+    display: flex;
+}
+
+
+
+
+/* REGISTER END */
+
+/* FOOTER START */
+
+footer {
+    border-top: 1px solid lightgray;
+    text-align: center;
+    margin: 5vh auto 5vh auto;
+}
+
+/* FOOTER END */
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVENESS */
+
+
+@media (min-width: 768px) {
+    
+
+/*NAV*/
+
+    .dropdown {
+        list-style: none;
+        display: none;
+        position: fixed;
+        top: 5vh;
+        right: 0;
+        padding: 0;
+        margin: 0;
+        background-color: #3a3633;
+    }
+
+    .dropdown > li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20vw;
+        height: 5vh;
+    }
+
+    .dropdown > li:hover {
+        cursor: pointer;
+        background-color: gray;
+        
+    }
+
+    .drop:hover .dropdown {
+        display: block;
+        cursor: text;
+    }
+
+    .navquad {
+        /* display: inline-block; */
+        list-style: none;
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0;
+        height: 5vh;
+    }
+
+    .navquad>li {
+        padding: 0 3vw;
+        height: 100%;
+        margin-bottom: 6px;
+    }
+
+    .a:hover {
+        border-bottom: 3px solid whitesmoke;
+    }
+
+    .menu {
+        display: none;
+    }
+
+/*NAV END */
+
+
+/*INTRO*/
+
+#intro {
+    background-image: url('img/New\ Zealand.jpg');
+    background-size: cover;
+    overflow: hidden;
+    color: whitesmoke;
+    padding-top: 10vh; /* nav */
+    margin-top: -5vh; /* nav */
+    height: 100vh ;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titlebox {
+    
+    border: 5px solid white;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr;
+    max-height: 80vh;
+    max-width: 70vw;
+    grid-template-areas:
+    'title title'
+    'subtitle subtitle'
+    'text1 text2'
+    'text1 text2';
+    
+}
+
+
+.titlebox>h1 {
+    margin: 5vh 3vw;
+    grid-area: title;
+    text-align: center;
+}
+
+.titlebox>h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(46, 46, 46, 0.6);
+    grid-area: subtitle;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+} 
+
+.p1, .p2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(46, 46, 46, 0.6);
+    border-top: 2px dashed rgb(145, 145, 145);
+}
+
+.p1 {
+    grid-area: text1;
+}
+.p2 {
+    grid-area: text2;
+}
+
+
+/* FEATURES */
+
+        #features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0 0 5vh 0;
+        padding-top: 5vh; /* nav */
+        margin-top: -5vh; /* nav */
+        }
+
+
+/*GALLERY*/
+
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding-top: 5vh; /*nav*/
+        margin-top: -5vh; /*nav*/
+    }
+
+    .gallery-image {
+        object-fit: cover;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+
+
+
+@media (min-width: 1200px) {
+
+/*INTRO*/
+
+    #intro {
+        background-image: url('img/New\ Zealand.jpg');
+        background-size: cover;
+        overflow: hidden;
+        color: whitesmoke;
+        padding-top: 10vh; /* nav */
+        margin-top: -5vh; /* nav */
+        height: 100vh ;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titlebox {
+        
+        border: 5px solid white;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-columns:1fr 1fr 1fr ;
+        /* max-height: 80vh; */
+        max-width: 70vw;
+        grid-template-areas:
+        'title subtitle subtitle'
+        'title subtitle subtitle'
+        'title text1 text2'
+        'title text1 text2'
+        'title text1 text2';
+        
+    }
+
+
+    .titlebox>h1 {
+        margin: 5vh 3vw;
+        grid-area: title;
+    }
+
+    .titlebox>h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(46, 46, 46, 0.6);
+        grid-area: subtitle;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    } 
+    
+    .p1, .p2 {
+        display: flex;
+        align-items: center;
+        background-color: rgba(46, 46, 46, 0.6);
+        margin: 0;
+        border-top: 2px dashed rgb(70, 70, 70);
+    }
+
+    .p1 {
+        grid-area: text1;
+    }
+    .p2 {
+        grid-area: text2;
+    }
+
+
+
+/* FEATURES */
+
+    #features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0 0 5vh 0;
+        padding-top: 5vh; /* nav */
+        margin-top: -5vh; /* nav */
+    }
+
+/*GALLERY*/
+
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-top: 5vh; /*nav*/
+        margin-top: -5vh; /*nav*/
+    }
+
+    .gallery-image {
+        object-fit: cover;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+
+/* SPINBOX - EXTRA */
+
+    .spinbox {
+        top: 47%;
+        left: 10rem;
+        transition: left 3s ease-in-out;
+        /* -webkit-transition: scale 1s; */
+    }
+    
+    .spinbox:hover {
+        animation: rotate ease-in-out 5s;
+        left:calc(50% - 10rem);
+        /* transform: scale(0); */
+        /* -webkit-transition: animation, left 5s; */
+        
+    } 
+    
+    @keyframes rotate {
+        0% {transform: rotate(0deg);}
+        50% {transform: rotate(-180deg);}
+        100% {transform: rotate(360deg);}
+    }
+
+
+}

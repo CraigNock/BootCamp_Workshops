@@ -1,0 +1,50 @@
+
+body {
+    margin: 0;
+}
+
+p {
+    font-family: Poppins;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+header, footer {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+}
+
+p {
+    margin: 0;
+}
+
+header {
+    margin: 0;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+footer{
+    margin: 0;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

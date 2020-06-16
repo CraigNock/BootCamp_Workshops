@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>Node: Workshop 1</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Node: Workshop 1</h1>
+    </header>
+    <div class='main'>
+        <h2>Part 1</h2>
+        <div class='content'>
+            <%- include('../partials/questions/5') %>
+            <div class='box answer'>
+                <h3>Answer</h3>
+                <!-- render answer here -->
+                <h3>Top 5 girls names in the England and Wales</h3>
+                <ol style="list-style-type:decimal;">
+                    <% popularGirlNames.forEach(function(name) { %>
+                        <li><%= `${name}` %>  </li>
+                    <% }); %>
+                </ol>
+
+                <div class="link-box">
+                    <a href="/question4.ejs">Previous</a><span> / </span> <a href="/question6.ejs" >Next</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

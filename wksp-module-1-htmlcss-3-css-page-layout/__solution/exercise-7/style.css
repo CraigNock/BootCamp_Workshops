@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.product-img {
+    width: 100%;
+    display: block;
+    outline: 1px solid red;
+}

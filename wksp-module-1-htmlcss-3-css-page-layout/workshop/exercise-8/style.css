@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fast {
+  animation: slidein ease-in-out 1s;
+}
+
+@keyframes slidein {
+  0% {transform: translate(20vw) ; opacity: 0}
+
+  100%{transform: translate(0); opacity: 1}
+}
+
+/* Button */
+.cool {
+  color: white;
+  background-color: rgb(55, 190, 214);
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 3vh;
+  padding: 5vh;
+  box-shadow: 3px 3px 5px 6px lightgrey;
+}
+
+.cool:hover {
+  cursor: pointer;
+  animation: buttsnap ease-in-out 1s;
+}
+
+@keyframes buttsnap {
+  0% {}
+  85% {transform: scale(1.3);}
+  95% {transform: scale(.9)}
+  100% {transform: scale(1)}
+}
